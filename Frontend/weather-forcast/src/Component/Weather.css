@@ -1,0 +1,198 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+  /* background-image: url("https://t4.ftcdn.net/jpg/05/41/58/31/360_F_541583129_QdZO2sXg8Rj0OtpicHLc02x6uVjJLdP2.jpg"); */
+  background-image: url("https://media.istockphoto.com/id/1160990138/vector/night-starry-sky-with-light-white-clouds.jpg?s=612x612&w=0&k=20&c=B0YjjkU-B2sUFMgilKne21-GH_dxFclaFTylK0YJQp0=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.search-bar {
+  margin-left: 100px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background-color: rgba(224, 219, 219, 0.418);
+}
+.search-bar:hover{
+  background-color: rgb(200, 255, 110);
+}
+button {
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background-color: rgba(224, 219, 219, 0.418);
+
+  margin-left: 10px;
+}
+button:hover{
+  background-color: rgb(200, 255, 110);
+}
+
+.heading {
+  color: white;
+  margin-left: -800px;
+  margin-top: -100px;
+}
+
+.weather-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-left: 90px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.weather-boxes > div {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.weather-box {
+  text-align: center;
+  padding: 10px;
+  border: 4px solid white;
+  background-color: rgb(123, 170, 252);
+  border-radius: 8px;
+}
+
+.weather-box:hover{
+  background-color: rgb(200, 255, 110);
+}
+
+.weather-box-label {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.weather-box-value {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.main-logo {
+  width: 130px;
+  margin-right: 1200px;
+}
+
+.small-logo {
+  width: 150px;
+  height: 150px;
+}
+.city {
+  font-size: 60px;
+  color: white;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    margin-left: 10px;
+  }
+
+  .heading {
+    margin-left: 10px;
+  }
+
+  .weather-boxes {
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .weather-boxes > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    margin-left: 20px;
+  }
+
+  .heading {
+    margin-left: -20px;
+    margin-top: -50px;
+  }
+
+  .weather-boxes {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 20px;
+  }
+
+  .main-logo {
+    margin-right: 20px;
+  }
+
+  .city {
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .search-bar {
+    margin-left: 50px;
+  }
+
+  .heading {
+    margin-left: -300px;
+  }
+
+  .weather-boxes {
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 30px;
+  }
+
+  .main-logo {
+    margin-right: 200px;
+  }
+
+  .city {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .search-bar {
+    margin-left: 100px;
+  }
+
+  .heading {
+    margin-left: -800px;
+  }
+
+  .weather-boxes {
+    margin-top: 40px;
+    margin-left: 90px;
+    padding: 50px;
+  }
+
+  .main-logo {
+    margin-right: 1200px;
+  }
+
+  .city {
+    margin-top: 70px;
+  }
+}
